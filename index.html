@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Falin ke 22</title>
+  <meta name="description" content=" ucapan ulang tahun untuk Falin dari Ilhan.">
+  <style>
+    :root{
+      --bg:#fff8f7;
+      --paper:#fffdfc;
+      --text:#2d2527;
+      --muted:#806f73;
+      --accent:#c76b7b;
+      --accent-dark:#9d4e60;
+      --line:#ead9dc;
+      --shadow:0 18px 55px rgba(80,35,45,.12);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family: Georgia, "Times New Roman", serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+      overflow-x:hidden;
+    }
+    a{color:inherit;text-decoration:none}
+    .nav{
+      position:fixed;top:0;left:0;right:0;z-index:20;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:16px 7%;
+      background:rgba(255,253,252,.76);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(234,217,220,.7);
+    }
+    .brand{font-weight:bold;letter-spacing:.08em}
+    .brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:24px;font-family:Arial,sans-serif;font-size:.78rem}
+    .navlinks a{color:#66575b}
+    .navlinks a:hover{color:var(--accent-dark)}
+    section{padding:105px 7%}
+    .hero{
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      padding-top:120px;
+      position:relative;
+      background:
+        radial-gradient(circle at 10% 20%, rgba(199,107,123,.13), transparent 28%),
+        radial-gradient(circle at 90% 80%, rgba(199,107,123,.10), transparent 30%);
+    }
+    .hero-grid{
+      width:min(1120px,100%);
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:70px;align-items:center;
+    }
+    .eyebrow{
+      font:700 .72rem/1 Arial,sans-serif;
+      text-transform:uppercase;letter-spacing:.22em;color:var(--accent-dark);
+      margin-bottom:18px;
+    }
+    h1{font-size:clamp(3.2rem,8vw,7rem);line-height:.95;font-weight:500}
+    h1 em{font-weight:400;color:var(--accent)}
+    .hero p{margin:26px 0 30px;color:var(--muted);max-width:520px;font-size:1.05rem}
+    .button{
+      display:inline-block;padding:13px 22px;border-radius:999px;
+      background:var(--text);color:white;font:600 .78rem/1 Arial,sans-serif;
+      letter-spacing:.05em;transition:.25s;
+    }
+    .button:hover{transform:translateY(-2px);background:var(--accent-dark)}
+    .hero-photo{
+      position:relative;
+      max-width:480px;margin:auto;
+    }
+    .hero-photo img{
+      width:100%;display:block;aspect-ratio:4/5;object-fit:cover;
+      border-radius:230px 230px 18px 18px;
+      box-shadow:var(--shadow);
+      transform:rotate(2deg);
+    }
+    .hero-photo:after{
+      content:"";position:absolute;inset:18px -16px -16px 16px;
+      border:1px solid var(--accent);border-radius:230px 230px 18px 18px;
+      z-index:-1;opacity:.55;
+    }
+    .float-heart{
+      position:absolute;color:var(--accent);font-size:28px;
+      animation:float 4s ease-in-out infinite;
+    }
+    .h1{top:10%;right:2%}.h2{bottom:8%;left:-5%;animation-delay:1.2s}
+    @keyframes float{50%{transform:translateY(-14px) rotate(8deg)}}
+    .intro{
+      background:var(--paper);
+      text-align:center;
+    }
+    .intro-inner{max-width:760px;margin:auto}
+    .kicker{color:var(--accent);font-size:2rem;margin-bottom:8px}
+    h2{font-size:clamp(2.2rem,5vw,4rem);font-weight:500;line-height:1.05;margin-bottom:18px}
+    .intro p{color:var(--muted);font-size:1.03rem}
+    .timeline-wrap{max-width:980px;margin:45px auto 0}
+    .timeline{position:relative}
+    .timeline:before{
+      content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line);
+    }
+    .event{width:50%;padding:0 45px 55px;position:relative}
+    .event:nth-child(even){margin-left:50%}
+    .event:after{
+      content:"♥";position:absolute;top:0;right:-10px;
+      width:20px;height:20px;text-align:center;color:var(--accent);
+      background:var(--bg);font-size:13px;
+    }
+    .event:nth-child(even):after{left:-10px;right:auto}
+    .event small{
+      font:700 .7rem Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-dark)
+    }
+    .event h3{font-size:1.45rem;margin:8px 0}
+    .event p{color:var(--muted)}
+    .gallery{background:var(--paper)}
+    .gallery-head{max-width:700px;margin-bottom:35px}
+    .gallery-grid{
+      max-width:1120px;margin:auto;
+      display:grid;grid-template-columns:1fr 1fr;gap:22px;
+    }
+    .card{overflow:hidden;border-radius:18px;background:white;box-shadow:0 12px 35px rgba(70,30,40,.08)}
+    .card img{width:100%;height:600px;object-fit:cover;display:block;transition:.5s}
+    .card:hover img{transform:scale(1.025)}
+    .caption{padding:17px 19px}
+    .caption strong{display:block;font-size:1.1rem}
+    .caption span{color:var(--muted);font-size:.9rem}
+    .letter{
+      max-width:780px;margin:auto;text-align:center;
+    }
+    .letter-box{
+      margin-top:35px;background:white;padding:48px 42px;
+      border:1px solid var(--line);box-shadow:var(--shadow);
+      border-radius:18px;position:relative;
+    }
+    .letter-box:before{
+      content:"“";position:absolute;top:-25px;left:50%;transform:translateX(-50%);
+      font-size:5rem;color:var(--accent);background:var(--bg);padding:0 12px;line-height:1;
+    }
+    .letter-box p{color:#66575b;font-size:1.08rem}
+    footer{
+      padding:55px 7%;text-align:center;background:#2d2527;color:#fff8f7;
+    }
+    footer .names{font-size:2.1rem;margin-bottom:7px}
+    footer .names span{color:#e89aaa}
+    footer p{color:#cdbfc2;font: .8rem Arial,sans-serif}
+    .heart{display:inline-block;color:#e89aaa;animation:pulse 1.5s infinite}
+    @keyframes pulse{50%{transform:scale(1.2)}}
+
+    /* Birthday theme */
+    .birthday-banner{position:relative;overflow:hidden;padding:90px 7%;text-align:center;background:radial-gradient(circle at 15% 25%,rgba(255,205,120,.30),transparent 22%),radial-gradient(circle at 85% 30%,rgba(231,133,157,.22),transparent 25%),linear-gradient(135deg,#fff4f5,#fffaf2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .birthday-banner .cake{font-size:3rem;display:block;margin-bottom:8px;animation:bounceCake 2s ease-in-out infinite}
+    @keyframes bounceCake{50%{transform:translateY(-8px) rotate(2deg)}}
+    .birthday-banner h2{margin-bottom:10px}.birthday-banner p{max-width:650px;margin:auto;color:var(--muted);font-size:1.03rem}
+    .birthday-tag{display:inline-block;margin-top:22px;padding:10px 18px;border-radius:999px;background:white;border:1px solid var(--line);font:700 .72rem Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-dark)}
+    .confetti{position:absolute;opacity:.7;animation:fall 7s linear infinite;font-size:20px}.c1{left:8%;top:-20px}.c2{left:22%;top:-50px;animation-delay:1.5s}.c3{right:18%;top:-30px;animation-delay:2.5s}.c4{right:7%;top:-70px;animation-delay:4s}
+    @keyframes fall{to{transform:translateY(650px) rotate(300deg)}}
+    .music-player{position:fixed;right:18px;bottom:18px;z-index:50;display:flex;align-items:center;gap:10px;padding:10px 13px;border-radius:999px;background:rgba(45,37,39,.94);color:white;box-shadow:0 10px 30px rgba(0,0,0,.18);font:600 .75rem Arial,sans-serif}
+    .music-btn{width:38px;height:38px;border:0;border-radius:50%;cursor:pointer;background:var(--accent);color:white;font-size:15px}.music-btn:hover{background:var(--accent-dark)}
+    .music-label{padding-right:4px}.music-label small{display:block;color:#dbcfd1;font-weight:400;margin-top:2px}
+    .birthday-letter{margin-top:30px;padding:22px;border-radius:14px;background:#fff6f7;border:1px dashed #dfb4bd;color:var(--accent-dark)}
+
+
+    /* Behind the Scene */
+    .bts-section{
+      padding:85px 7%;
+      background:var(--paper);
+      text-align:center;
+    }
+    .bts-wrap{max-width:900px;margin:auto}
+    .bts-subtitle{
+      color:var(--accent);
+      font:700 .72rem Arial,sans-serif;
+      text-transform:uppercase;
+      letter-spacing:.22em;
+      margin-bottom:12px;
+    }
+    .bts-title{
+      font-size:clamp(2rem,5vw,3.4rem);
+      margin-bottom:12px;
+    }
+    .bts-text{color:var(--muted);margin-bottom:28px}
+    .youtube-frame{
+      position:relative;
+      width:100%;
+      aspect-ratio:16/9;
+      overflow:hidden;
+      border-radius:20px;
+      background:#111;
+      box-shadow:var(--shadow);
+    }
+    .youtube-frame iframe{
+      width:100%;
+      height:100%;
+      border:0;
+      display:block;
+    }
+    .bts-note{
+      margin-top:14px;
+      color:#9a858a;
+      font: .75rem Arial,sans-serif;
+    }
+
+    @media(max-width:800px){
+      .navlinks{display:none}
+      .hero-grid{grid-template-columns:1fr;gap:45px;text-align:center}
+      .hero p{margin-left:auto;margin-right:auto}
+      .hero-photo{max-width:360px}
+      .timeline:before{left:8px}
+      .event,.event:nth-child(even){width:100%;margin-left:0;padding-left:38px;padding-right:0}
+      .event:after,.event:nth-child(even):after{left:-2px;right:auto}
+      .gallery-grid{grid-template-columns:1fr}
+      .card img{height:auto;max-height:650px}
+      .letter-box{padding:40px 25px}.music-label{display:none}.music-player{right:14px;bottom:14px;padding:8px}.bts-section{padding:70px 5%}.youtube-frame{border-radius:14px}
+    }
+  </style>
+</head>
+<body>
+  <audio id="bgMusic" loop preload="auto"><source src="music.mp3" type="audio/mpeg"></audio>
+  <div class="music-player" aria-label="Kontrol musik">
+    <button class="music-btn" id="musicBtn" aria-label="Putar atau jeda musik">▶</button>
+    <div class="music-label">Our birthday song ♫<small id="musicStatus">Mencoba memutar otomatis...</small></div>
+  </div>
+
+<header class="nav">
+  <a class="brand" href="#home">Hari ini ulang tahunmu</a>
+  <nav class="navlinks">
+    <a href="#birthday">Birthday</a>
+    <a href="#story">Story</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#memories">Memories</a>
+    <a href="#behind-the-scene">BTS</a>
+    <a href="#letter">Letter</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">ucapan dari ilhan</div>
+        <h1>Halo Falin</h1>
+        <p>
+          Halo sayang lek awm ws moco iki brti awm ws scan barcode qr ku, lucu gak? <br>iku aku bikin sendiri loh semoga kamu suka ya hehehe. <br><br>jangan lupa pencet (▶) ya gae nyetel lagune hehehe.
+        </p>
+        <a class="button" href="#birthday">LIHAT UCAPAN UNTUKMU ↓</a>
+      </div>
+
+      <div class="hero-photo">
+        <span class="float-heart h1">♥</span>
+        <span class="float-heart h2">♡</span>
+        <img src="https://ilhanfalin.github.io/tembak.jpeg" alt="Ilhan dan Falin">
+      </div>
+    </div>
+  </section>
+
+  <section class="birthday-banner" id="birthday">
+    <span class="confetti c1">✦</span><span class="confetti c2">•</span><span class="confetti c3">✦</span><span class="confetti c4">•</span>
+<span class="confetti c5">✦</span><br><br><span class="confetti c6">•</span>
+    <span class="cake">🎂</span>
+    <div class="eyebrow">A special day for you sayang</div>
+   <h2>Happy Birthday, Falin! yang ke 22</h2>
+    <p>Tepat hari senin tanggal 10 agustus tahun 2026  usiamu bertambah satu tahun. sejak pandangan pertama saat aku melihatmu, seperti sinar matahari yang menyinari dunia, membuatku terpesona dan oleh kecantikanmu.  Senyummu yang manis,  matamu yang berbinar, dan aura yang terpancar darimu, semuanya membuatku jatuh hati.<br> <br>Selamat ulang tahun sayang. diusia mu yang ke-22 ini, aku harap awm semakin dewasa, makin bijak dan tetep jadi falin sg aku kenal yo. aku pengen semua harapan mu ditahun ini segera terkabul amin. tetap bahagia ya sayang, dijauhkan dari sakit dilancarkan rezekinya, dipermudah semua jalannya. <br>
+<br>Meski ditahun depan akeh rintangan yang akan awm hadapi aku percoyo kok klo awm bs menghadapi iku semua dan pastinya aku bakal onk disisimu, mendukung apapun mimpimu,  dan selalu mencintaimu </p>
+    <div class="birthday-tag">With love, from Ilhan ♥</div>
+  </section>
+
+  <section class="intro" id="story">
+    <div class="intro-inner">
+      <div class="kicker">✦</div>
+      <h2>sedikit cerita.</h2>
+      <p>
+        Maaf ya sayung mungkin hadiahnya gk sesuai harapanmu atau mungkin gk seberapa, tetapi ada kisah dibaliknya. terus dibaca ya:)
+      </p>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="timeline-wrap">
+      <div class="eyebrow">Short story</div>
+      <h2>Alasan aku</h2>
+
+      <div class="timeline">
+        <article class="event">
+          <small>Chapter 01</small>
+          <h3>Awal mula</h3>
+          <p>
+            Sumpah yung awale aku bingung banget mau ngado apa soalnya awm setiap saat co jadi aku takute barange sama terus gk kepake malahan. sampe bingung banget mau beli apa, awm inget gk aku beberapa kali ngomong <i><b>"keranjangmu akeh bgt, isie opo ae yang?"</i></b> ya karna ben aku gk sama beline karo awm. pengen ngado celana tapi gaero ukuranmu, awm selalu aku tanya lingkar perute brp? jaremu <i><b> "aku gk ngukur"</i></b> hmmm makin bingung.
+          </p>
+        </article>
+
+        <article class="event">
+          <small>Chapter 02</small>
+          <h3>Sepatu</h3>
+          <p>
+            Terus aku keinget suatu hal waktu dulu kan awm sm temen2 mu kate cfd an tapi bingung mau make sepatu apa soalnya sepatumu flatshoes semua. jadi seenggaknya kepake lah buat hal kyk gtu hadiahnya, terus  awm kan kate ngegym sisan dan dan bingung mau make apa bisa make hadiah dari aku hehehe dan kamu inget gak aku nakoki ukuran sendalmu? pas awm kirim pap teko banyuwangi <i><b>"sendalmu gk kecilken ta yang? kok mok gae kyk ngepas"</i></b> nah aku bingung karna takut kebesaran sumpah trs takut jg kekecilan semoga ini pas ya yang.
+          </p>
+        </article>
+
+        <article class="event">
+          <small>Chapter 03</small>
+          <h3>Jaket hitam</h3>
+          <p>
+            Sebenarnya aku pas awm mau co jaket putih kape tak larang yung tapi ngkok rencanaku ketahuan, tapi karna awm beli jaket putih aku jadi ngerti ukuran jaket e lewat ss an mu hehehe. awm inget gk aku selalu tanya <i><b>"awm kok gk tuku sg ireng yang?"</i></b> sebenere ben belinya gk double aja hehehe. ditambah awm kan ws kepingin sisan jaket hitam sg ada taline, semoga kepake ya bs gantian karo sg putih.
+          </p>
+        </article>
+
+        <article class="event">
+          <small>Chapter 04</small>
+          <h3>Terakhir</h3>
+          <p>
+            Kamu tetep dirayakan kok yang bakal tak usahakan, aku inget kok pas awdw berantem awm sampe bilang gaush ngado apapun cukup hapusin tmn cwek yg seangkatan dan sekarang udah tak lakukan sayang, apapun biar ngejaga hati kamu.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bts-section" id="behind-the-scene">
+    <div class="bts-wrap">
+      <div class="bts-subtitle">Behind the Scene</div>
+      <h2 class="bts-title">Behind The Scene Kado</h2>
+      <p class="bts-text">
+        Maaf yung aku gk iso ngucapin pas jam 00.00 soale gk surprise ngkok hehehe. klik tonton videone yo:)
+      </p>
+
+      <div class="youtube-frame">
+        <iframe
+          src="https://www.youtube.com/embed/OICxEPpNiRY?rel=0&playsinline=1"
+          title="Behind the Scene — Ilhan & Falin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="bts-note">
+        Recode by Ilhan 
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="memories">
+    <div class="gallery-head">
+      <div class="eyebrow">Our memories</div>
+      <h2>Moment spesial menurutku.</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <article class="card">
+        <img src="https://ilhanfalin.github.io/borobudur.jpg" alt="Ilhan dan Falin di tempat wisata">
+        <div class="caption">
+          <strong>A day to remember</strong>
+          <span>aku dan falin di Candi Borobudur</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://ilhanfalin.github.io/IMG_7587.jpeg" alt="Ilhan dan Falin di malam hari">
+        <div class="caption">
+          <strong>Night in the city</strong>
+          <span>aku dan falin di Malioboro</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="letter">
+    <div class="letter">
+      <div class="eyebrow">A little letter</div>
+      <h2>Untuk kamu</h2>
+      <div class="letter-box">
+        <p>
+          Terima kasih sudah menjadi bagian dan masuk dalam hidupmu serta menemani mu bertambahnya usia mungkin terlihat sederhana, tetapi selalu punya tempat tersendiri untuk dikenang.
+        </p>
+        <br>
+        <div class="birthday-letter">🎂 <strong>Sekali lagi selamat ulang tahun, Falin pacarku sayang.</strong><br>Semoga hari ini menjadi hari terbaik dalam tahun ini dan membawa banyak senyum, hal-hal baik, dan kenangan indah yang bisa kita ceritakan lagi nanti. sampe bertemu ditahun depan.</div>
+        <br>
+        <p><strong>— Ilhan</strong></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="names">Untuk Falin</div>
+  <p>Recode by Ilhan - all rights reserved 2026</p>
+</footer>
+
+
+  <script>
+    const music=document.getElementById("bgMusic"), btn=document.getElementById("musicBtn"), status=document.getElementById("musicStatus");
+    function ui(p){btn.textContent=p?"❚❚":"▶";status.textContent=p?"Sedang diputar ♫":"Klik ▶ untuk memutar"}
+    async function playMusic(){try{await music.play();ui(true)}catch(e){ui(false)}}
+    btn.addEventListener("click",async()=>{if(music.paused) await playMusic(); else {music.pause();ui(false)}});
+    window.addEventListener("load",playMusic);
+    const first=async()=>{if(music.paused) await playMusic();document.removeEventListener("pointerdown",first);document.removeEventListener("keydown",first)};
+    document.addEventListener("pointerdown",first);document.addEventListener("keydown",first);
+  </script>
+</body>
+</html>
